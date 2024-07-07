@@ -1,0 +1,180 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}    
+
+header {
+    background-color: rgba(36, 34, 34, 0.788);
+    padding: 16px;
+    font-style: italic;
+
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ccc;
+}
+
+header li {
+    float: left;
+    padding: 10px;
+    list-style: none;
+}
+
+header li a {
+    text-decoration: none;
+    color: #ccc;
+    font-weight: bold;
+}
+
+header li a:hover {
+    color: #f9f4f4;
+}
+
+#logo {
+    height: 500px;
+}
+
+.sobre {
+    width: 100%;
+    display: flex;
+}
+
+.about-store {
+    width: 60%;
+    margin-top: 30px; 
+    padding: 10px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.border {
+    border: 1px solid rgba(36, 34, 34, 0.788);
+    margin-bottom: 40px;
+}
+
+.products img {
+    height: 200px;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: repeat(3, 31.3%);
+    column-gap: 3%;
+    row-gap: 5%;
+}
+
+article > * {
+    text-align: center;
+    display: block;
+}
+article > img {
+    margin: 0 auto
+}
+
+.invertida {
+    transform: scaleX(-1);
+}
+
+strong {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+button {
+    margin-top: 10px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100%;
+    padding: 6px;
+    color: #fff;
+    background-color: rgba(36, 34, 34, 0.788);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+
+}
+
+button:hover {
+    background-color: rgba(89, 87, 87, 0.788);
+}
+
+@media screen and (max-width: 767px){
+    .conteudo {
+        display: block; 
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    header li {
+        float: right;
+        padding: 5px;
+        list-style: none;
+    }
+
+    .sobre {
+        width: 100%;
+        display: block;
+    }
+
+    .about-store {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 30px;
+        margin-top: 0;
+    }
+
+    #logo {
+        width: 100%;
+        height: auto;
+    }
+
+    article{
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .container{
+        max-width: 90%;
+    }
+
+    .about-store {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 30px;
+        margin-top: 0;
+    }
+
+    .sobre {
+        display: block;
+    }
+
+    #logo {
+        width: 100%;
+        height: auto;
+    }
+
+    .conteudo {
+        display: grid;
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+        row-gap: 5%;
+    }
+}
